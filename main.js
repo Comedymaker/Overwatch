@@ -1,3 +1,23 @@
+let top_nav = document.getElementById("top_nav");
+let tank = document.getElementById("tank_btn");
+let all_btn = document.getElementById("all_btn");
+let damage = document.getElementById("damage_btn");
+let support = document.getElementById("support_btn");
+window.onscroll = function () {
+    // alert(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop >= 100) {
+        top_nav.style.position = "fixed";
+        top_nav.style.top = "0px";
+        top_nav.style.left = "20px";
+    }
+    else {
+        top_nav.style.position = "relative";
+        top_nav.style.top = "50px";
+        top_nav.style.left = "auto";
+    }
+}
+
+
 let Carousel = document.getElementById("Carousel");
 let children = Carousel.children;
 a = document.getElementById("a")
@@ -58,6 +78,14 @@ function turn_all() {
         children[index].style.display = "block";
         children[index].style.left = "0px";
     }
+    all_btn.style.backgroundColor = "#212529";
+    all_btn.style.color = "white";
+    tank.style.backgroundColor = "white";
+    tank.style.color = "#4b535d";
+    damage.style.backgroundColor = "white";
+    damage.style.color = "#4b535d";
+    support.style.backgroundColor = "white";
+    support.style.color = "#4b535d";
 }
 
 function turn_tank() {
@@ -86,6 +114,16 @@ function turn_tank() {
     z3.style.display = "none";
     z4.style.display = "none";
     z7.style.display = "none";
+    
+    tank.style.backgroundColor = "#212529";
+    tank.style.color = "white";
+    all_btn.style.backgroundColor = "white";
+    all_btn.style.color = "#4b535d";
+    damage.style.backgroundColor = "white";
+    damage.style.color = "#4b535d";
+    support.style.backgroundColor = "white";
+    support.style.color = "#4b535d";
+
 } 
 
 function turn_damage() {
@@ -105,14 +143,30 @@ function turn_damage() {
     z5.style.display = "none";
     z6.style.display = "none";
     z7.style.display = "none";
+    damage.style.backgroundColor = "#212529";
+    damage.style.color = "white";
+    all_btn.style.backgroundColor = "white";
+    all_btn.style.color = "#4b535d";
+    tank.style.backgroundColor = "white";
+    tank.style.color = "#4b535d";
+    support.style.backgroundColor = "white";
+    support.style.color = "#4b535d";
 }
 
-// function turn_support() {
-//     c
-//     f
-//     g
-//     k 
-//     q
-//     t
-//     z
-// }
+function turn_support() {
+    // c
+    // f
+    // g
+    // k 
+    // q
+    // t
+    // z
+    support.style.backgroundColor = "#212529";
+    support.style.color = "white";
+    all_btn.style.backgroundColor = "white";
+    all_btn.style.color = "#4b535d";
+    tank.style.backgroundColor = "white";
+    tank.style.color = "#4b535d";
+    damage.style.backgroundColor = "white";
+    damage.style.color = "#4b535d";
+}

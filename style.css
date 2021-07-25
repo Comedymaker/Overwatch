@@ -83,6 +83,7 @@ header .logo1{
     border-radius: 3px;
     display: flex;
     max-width: 1600px;
+    z-index: 99;
 }
 #site .logo1{
     background-image: url(./img/3.png);
@@ -126,7 +127,7 @@ header .logo1{
 }
 #site .items li:hover ul li{
     border-bottom: none;
-    visibility: visible;
+    display: block;
 }
 /* #site .items li:checked + li{
     background-color: #353c42;
@@ -170,7 +171,7 @@ header .logo1{
     position: relative;
     left: -22%;
     z-index: 999;
-    visibility: hidden;
+    display: none;
     font-family: Roboto,Helvetica Neue,Arial,sans-serif;
 }
 #site .events ul li{
@@ -410,6 +411,11 @@ header .logo1{
     text-align: center;
     margin: 0px;
 }
+#choose_hero .choose .sort{
+    height: 12px;
+    width: 12px;
+}
+
 #playing_role h2{
     font-family: Big Noodle Too,impact,sans-serif;
     font-size: 3.906rem;

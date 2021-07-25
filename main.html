@@ -28,7 +28,7 @@
         
     </header>
     <section id="site">
-        <nav>
+        <nav id="top_nav">
             <div class="logo1"></div>
             <ul class="items">
                 <li style="border-bottom: 3px #f06414 solid;">
@@ -118,10 +118,10 @@
                     <span>ROLES</span>
                     <nav>
                         <ul class="kinds">
-                            <li onclick="turn_all()">ALL 32</li>
-                            <li onclick="turn_tank()">TANK 8</li>
-                            <li onclick="turn_damage()">DAMAGE 17</li>
-                            <li onclick="turn_support()">SUPPORT 7</li>
+                            <li onclick="turn_all()" id="all_btn" style="background-color: #212529;color: white;">ALL 32</li>
+                            <li onclick="turn_tank()" id="tank_btn">TANK 8</li>
+                            <li onclick="turn_damage()" id="damage_btn">DAMAGE 17</li>
+                            <li onclick="turn_support()" id="support_btn">SUPPORT 7</li>
                             <a class="view_all">VIEW ALL HEROES</a>
                         </ul>
                     </nav>
@@ -130,131 +130,131 @@
                         <div class="choose"id="Carousel">
                             <div id="a">
                                 <img src="./img/hero-select-portrait (16).png">
-                                <div class="name">Echo</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Echo</div>
                             </div>
                             <div id="b">
                                 <img src="./img/hero-select-portrait (10).png">
-                                <div class="name">Sigma</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Sigma</div>
                             </div>
                             <div id="c">
                                 <img src="./img/hero-select-portrait (14).png">
-                                <div class="name">Baptiste</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Baptiste</div>
                             </div>
                             <div id="d">
                                 <img src="./img/hero-select-portrait (13).png">
-                                <div class="name">Ashe</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Ashe</div>
                             </div>
                             <div id="e">
                                 <img src="./img/hero-select-portrait (20).png">
-                                <div class="name">Wrecking Ball</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Wrecking Ball</div>
                             </div>
                             <div id="f">
                                 <img src="./img/hero-select-portrait (18).png">
-                                <div class="name">Brigitte</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Brigitte</div>
                             </div>
                             <div id="g">
                                 <img src="./img/hero-select-portrait (22).png">
-                                <div class="name">Moira</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Moira</div>
                             </div>
                             <div id="h">
                                 <img src="./img/hero-select-portrait (26).png">
-                                <div class="name">Doomfist</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Doomfist</div>
                             </div>
                             <div id="i">
                                 <img src="./img/hero-select-portrait (12).png">
-                                <div class="name">Orisa</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Orisa</div>
                             </div>
                             <div id="j">
                                 <img src="./img/hero-select-portrait (31).png">
-                                <div class="name">Sombra</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Sombra</div>
                             </div>
                             <div id="k">
                                 <img src="./img/hero-select-portrait.png">
-                                <div class="name">Ana</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Ana</div>
                             </div>
                             <div id="l">
                                 <img src="./img/hero-select-portrait (21).png">
-                                <div class="name">Bastion</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Bastion</div>
                             </div>
                             <div id="m">
                                 <img src="./img/hero-select-portrait (15).png">
-                                <div class="name">D.Va</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;D.Va</div>
                             </div>
                             <div id="n">
                                 <img src="./img/hero-select-portrait (29).png">
-                                <div class="name">Genji</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Genji</div>
                             </div>
                             <div id="o">
                                 <img src="./img/hero-select-portrait (30).png">
-                                <div class="name">Hanzo</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Hanzo</div>
                             </div>
                             <div id="p">
                                 <img src="./img/hero-select-portrait (17).png">
-                                <div class="name">Junkrat</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Junkrat</div>
                             </div>
                             <div id="q">
                                 <img src="./img/hero-select-portrait (2).png">
-                                <div class="name">Lúcio</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Lúcio</div>
                             </div>
                             <div id="r">
                                 <img src="./img/hero-select-portrait (8).png">
-                                <div class="name">McCree</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;McCree</div>
                             </div>
                             <div id="s">
                                 <img src="./img/hero-select-portrait (27).png">
-                                <div class="name">Mei</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Mei</div>
                             </div>
                             <div id="t">
                                 <img src="./img/hero-select-portrait (23).png">
-                                <div class="name">Mercy</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Mercy</div>
                             </div>
                             <div id="u">
                                 <img src="./img/hero-select-portrait (6).png">
-                                <div class="name">Pharah</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Pharah</div>
                             </div>
                             <div id="v">
                                 <img src="./img/hero-select-portrait (11).png">
-                                <div class="name">Reaper</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Reaper</div>
                             </div>
                             <div id="w">
                                 <img src="./img/hero-select-portrait (19).png">
-                                <div class="name">Reinhardt</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Reinhardt</div>
                             </div>
                             <div id="x">
                                 <img src="./img/hero-select-portrait (25).png">
-                                <div class="name">Roadhog</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Roadhog</div>
                             </div>
                             <div id="y">
                                 <img src="./img/hero-select-portrait (4).png">
-                                <div class="name">Soldier: 76</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Soldier: 76</div>
                             </div>
                             <div id="z">
                                 <img src="./img/hero-select-portrait (9).png">
-                                <div class="name">Symmetra</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Symmetra</div>
                             </div>
                             <div id="z2">
                                 <img src="./img/hero-select-portrait (7).png">
-                                <div class="name">Torbjörn</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Torbjörn</div>
                             </div>
                             <div id="z3">
                                 <img src="./img/hero-select-portrait (5).png">
-                                <div class="name">Tracer</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Tracer</div>
                             </div>
                             <div id="z4">
                                 <img src="./img/hero-select-portrait (21).png">
-                                <div class="name">Widowmaker</div>
+                                <div class="name"><img src="./img/damage.svg" class="sort">&nbsp;Widowmaker</div>
                             </div>
                             <div id="z5">
                                 <img src="./img/hero-select-portrait (1).png">
-                                <div class="name">Winston</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Winston</div>
                             </div>
                             <div id="z6">
                                 <img src="./img/hero-select-portrait (24).png">
-                                <div class="name">Zarya</div>
+                                <div class="name"><img src="./img/tank.svg" class="sort">&nbsp;Zarya</div>
                             </div>
                             <div id="z7">
                                 <img src="./img/hero-select-portrait (30).png">
-                                <div class="name">Zenyatta</div>
+                                <div class="name"><img src="./img/support.svg" class="sort">&nbsp;Zenyatta</div>
                             </div>
                             
                         </div>
