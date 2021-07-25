@@ -10,10 +10,27 @@ header{
     width: 100%;
     
 }
+.btn{
+    cursor: pointer;
+}
 *{
     margin: 0;
     padding: 0;
+    max-width: 2000px;
 }
+body{
+    background-color: #f6f6f6;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* section{
+    max-width: 2000px;
+} */
 header .logo1{
     background-image: url(./img/1.png);
     background-size: contain;
@@ -65,6 +82,7 @@ header .logo1{
     background-color: white;
     border-radius: 3px;
     display: flex;
+    max-width: 1600px;
 }
 #site .logo1{
     background-image: url(./img/3.png);
@@ -172,10 +190,10 @@ header .logo1{
 }
 #About .intro{
     display: flex;
+    justify-content: center;
 
 }
 #About .video{
-    margin-left: 100px;
     height: 360px;
     width: 637px;
     background-image: url(./img/4.jpg);
@@ -216,6 +234,7 @@ header .logo1{
 #learn_more .left{
     background-image: url(./img/5.jpg);
     background-position: right;
+    background-repeat: no-repeat;
     width: 50%;
     height: 300px;
 }
@@ -226,10 +245,657 @@ header .logo1{
     background-repeat: no-repeat;
     width: 300px;
     height: 170px;
+    margin: 25px auto ;
+}
+#learn_more .left .btn{
+    min-width: 200px;
+    padding: 12px 40px;
+    font-size: 21px;
+    line-height: 21px;
+    background-color: #f06414;
+    color: white;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    position: relative;
+    left: 37%;
 }
 #learn_more .right{
     background-image: url(./img/6.png);
     background-size: cover;
     width: 50%;
     height: 300px;
+}
+#choose_hero{
+    background-image: url(./img/8.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 800px; */
+    padding: 50px 10px;
+}
+#choose_hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+#choose_hero .container h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: white;
+}
+#choose_hero .container p{
+    text-align: center;
+    max-width: 760px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 21px;
+    line-height: 30px;
+    color: white;
+}
+#choose_hero .container .hero_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#choose_hero .container .hero_wrapper .switch{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    position: relative;
+    left: -30%;
+}
+#choose_hero .container .hero_wrapper .switch span{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    color: white;
+}
+#choose_hero .kinds{
+    display: flex;
+    list-style: none;
+    
+}
+#choose_hero .kinds li{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #9b9da2;
+    cursor: pointer;
+    color: #4b535d;
+}
+#choose_hero .kinds .view_all{
+    text-align: center;
+    margin: 0 0 0 auto;
+    position: relative;
+    left: 70%;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 21px;
+    line-height: 0;
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
+}
+#playing_role h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    text-align: center;
+}
+#playing_role .container{
+    padding: 80px 0;
+}
+#playing_role .container .role{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#playing_role .container .photo{
+    width: 170px;
+    height: 170px;
+    margin: 20px;
+}
+#playing_role .container .role li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#playing_role .container .role li h3{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #4b535d;
+}
+#playing_role .container .role li p{
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #212529;
+    max-width: 480px;
+    margin: auto;
+    padding: 20px 0;
+    
+}
+#game_modes{
+    background-image: url(./img/2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#game_modes .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#game_modes .container h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    margin: 50px auto 10px auto;
+}
+#game_modes .container p{
+    text-align: center;
+    max-width: 760px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 21px;
+    line-height: 30px;
+    color: #4b535d;
+}
+#game_modes .modes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#game_modes .modes .single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+}
+#game_modes .modes .single .svg{
+    height: 50px;
+    width: 50px;
+    fill:#4b535d;
+    margin: 20px 0;
+}
+#game_modes .modes .single h3{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: rgb(51, 51, 51)
+}
+#game_modes .modes .single p{
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+#game_modes .modes .single a{
+    background-color: #ffb033;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: white;
+    padding: 6px 60px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#workshop .head{
+    background-image: url(./img/15.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#workshop .head h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: white;
+    margin: 30px auto 10px auto;
+}
+#workshop .head h4{
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: white;
+    font-size: 24px;
+    line-height: 27px;
+}
+#workshop .head p{
+    text-align: center;
+    max-width: 760px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 21px;
+    line-height: 30px;
+    color: white;
+}
+#workshop .container{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: #F2F1ED;
+}
+#workshop .learn_more{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+#workshop .mode{
+    display: flex;
+    
+}
+#workshop .learn_more .svg{
+    width: 86px;
+    height: 86px;
+    background-color: #4b535d;
+    border-radius: 50%;
+}
+#workshop .learn_more .About{
+    width: 55px;
+    height: 55px;
+    fill:white;
+    position: relative;
+    left: 18%;
+    top: 18%;
+}
+#workshop .word{
+    margin-left: 20px;
+    max-width: 523px;
+}
+#workshop .word h3{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+#workshop .word p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+#workshop .btn
+{
+    width: 300px;
+    padding: 12px 40px;
+    font-size: 21px;
+    line-height: 21px;
+    background-color: #ffb033;;
+    color: white;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#endorsements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+#endorsements h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    text-align: center;
+}
+#endorsements p{
+    max-width: 750px;
+    font-size: 21px;
+    line-height: 30px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #212529;
+    text-align: center;
+}
+#advantage{
+    background-color: #F2F1ED;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 ;
+}
+#advantage .sin{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    align-items: center;
+    margin-left: 50px;
+    font-family: Arial,sans-serif;
+}
+#advantage .sin p{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    max-width: 350px;
+    
+}
+#endorsement_levels{
+    display: flex;
+    justify-content: center;
+}
+#endorsement_levels h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    text-align: left;
+    margin-top: 50px;
+}
+#endorsement_levels p{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 750px;
+}
+#endorsement_levels h3{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: Big Noodle Too,impact,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    color: #4b535d;
+}
+#endorsement_levels .word .p1{
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 750px;
+    padding-bottom: 40px;
+}
+#five_heroes{
+    background-image: url(./img/21.jpg);
+    background-position: center;
+    height: 480px;
+    margin-bottom: 80px;
+}
+#making_progress{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#making_progress h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    text-align: center;
+}
+#making_progress p{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #212529;
+    max-width: 630px;
+    text-align: center;
+}
+#making_progress .loot{
+    display: flex;
+}
+#making_progress .word1 h4{
+    font-size: 24px;
+    line-height: 27px;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #4b535d;
+}
+#making_progress .word1 p{
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+}
+#making_progress  .word1{
+    margin: 50px 30px;
+}
+#making_progress .achievements{
+    display: flex;
+    justify-content: center;
+}
+#looking_forgroup{
+    display: flex;
+    background-color: #F2F1ED;
+}
+#looking_forgroup img{
+    width: 50%;
+}
+#looking_forgroup h2{
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-size: 3.906rem;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #4b535d;
+    text-align: left;
+    margin-top: 100px;
+}
+#looking_forgroup p{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 600px;
+}
+#footer{
+    background-image: url(./img/25.jpg);
+    color: #f6f6f6;
+    fill:#f6f6f6;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #9b9da2;
+}
+#footer .btn{
+    max-width: 200px;
+    padding: 12px 40px;
+    font-size: 21px;
+    line-height: 21px;
+    background-color: #f06414;
+    color: white;
+    font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 30px 0;
+}
+#footer .connected{
+    margin-top: 30px;
+}
+#footer .connected h3{
+    margin-top: 4px;
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-style: italic;
+    color: #f6f6f6;
+    letter-spacing: .05rem;
+    font-size: 25px;
+    font-weight: 700;
+    font-variant: normal;
+    line-height: normal;
+    text-align: center;
+}
+#footer .refs{
+    display: flex;
+    justify-content: center;
+}
+#footer .refs img{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #F0EDF2;
+}
+#footer_container .lang{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#footer_container .lang *{
+    margin: 20px auto;
+}
+#footer_container .logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#footer_container .link{
+    color:rgba(0,0,0,.7);
+    cursor: pointer;
+}
+#footer_container .link1{
+    color:rgba(0,0,0,.7);
+    cursor: pointer;
+}
+#footer_container .link:hover{
+    color:black;
+
+}
+#footer_container .link::before{
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background-color: rgba(0,0,0,.3);
+    margin: 0 15px;
+    pointer-events: none;
+}
+#footer_container .AD{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }

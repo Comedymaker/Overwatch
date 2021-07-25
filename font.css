@@ -286,3 +286,7 @@
     font-family: Blizzard;
     src: url(./font/blizzard-6374a0ee30.regular.woff);
   }
+  @font-face {
+    font-family: FuturaNo2D;
+    src: url(./font/FuturaNo2D-DemiBold-8635bfcad5.woff);
+  }
