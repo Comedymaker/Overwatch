@@ -33,17 +33,50 @@
             <ul class="items">
                 <li style="border-bottom: 3px #f06414 solid;">
                     GAME<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg>
-                    
+                    <ul>
+                        <li>About</li>
+                        <li>Maps</li>
+                    </ul>
                 </li>
                 <li>HEROES</li>
-                <li>EVENTS<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg></li>
+                <li class="events">EVENTS
+                    <svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg>
+                    <ul>
+                        <li>Summer Games</li>
+                        <li>Halloweeen Terror</li>
+                        <li>Winter Wonderland</li>
+                        <li>Lunar New Year</li>
+                        <li>Archives</li>
+                        <li>Anniversary</li>
+                    </ul>
+                </li>
                 
                 <li>MEDIA</li>
-                <li>NEWS<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg></li>
+                <li class="news">NEWS<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg>
+                    <ul>
+                    <li>News</li>
+                    <li>Patch Notes</li>
+                </ul>
+                </li>
                 
-                <li>ESPORTS<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg></li>
+                <li class="esports">ESPORTS<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg>
+                    <ul>
+                    <li>About</li>
+                    <li>Overwatch League</li>
+                    <li>Overwatch Contenders</li>
+                    <li>Open Division</li>
+                    <li>Overwatch World Cup</li>
+                </ul>
+                </li>
                 
-                <li style="width: 130px;">COMMUNITY<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg></li>
+                <li style="width: 130px;" class="community">COMMUNITY<svg class="Svg-icon" viewBox="0 0 64 64"><path d="M31.1 43.6L9.6 22.1a1.2 1.2 0 0 1 1.5-1.9l20.3 12.4a1.2 1.2 0 0 0 1.3 0l20.2-12.4a1.2 1.2 0 0 1 1.5 1.9L32.9 43.6a1.2 1.2 0 0 1-1.8 0z"></path></svg>
+                    <ul>
+                        <li>Player Search</li>
+                        <li>Heart Overwatch</li>
+                        <li>Heroes Among Us</li>
+                        <li>Forums</li>
+                    </ul>
+                </li>
                 
             </ul>
             <div class="left">
@@ -85,16 +118,147 @@
                     <span>ROLES</span>
                     <nav>
                         <ul class="kinds">
-                            <li>ALL 32</li>
-                            <li>TANK 8</li>
-                            <li>DAMAGE 17</li>
-                            <li>SUPPORT 7</li>
+                            <li onclick="turn_all()">ALL 32</li>
+                            <li onclick="turn_tank()">TANK 8</li>
+                            <li onclick="turn_damage()">DAMAGE 17</li>
+                            <li onclick="turn_support()">SUPPORT 7</li>
                             <a class="view_all">VIEW ALL HEROES</a>
                         </ul>
                     </nav>
                     <div class="select">
-                        <button class="left"></button>
-                        <button class="right"></button>
+                        <img src="./img/34.png" style="position: relative;top: 160px;cursor: pointer;"onclick="turn_left()">
+                        <div class="choose"id="Carousel">
+                            <div id="a">
+                                <img src="./img/hero-select-portrait (16).png">
+                                <div class="name">Echo</div>
+                            </div>
+                            <div id="b">
+                                <img src="./img/hero-select-portrait (10).png">
+                                <div class="name">Sigma</div>
+                            </div>
+                            <div id="c">
+                                <img src="./img/hero-select-portrait (14).png">
+                                <div class="name">Baptiste</div>
+                            </div>
+                            <div id="d">
+                                <img src="./img/hero-select-portrait (13).png">
+                                <div class="name">Ashe</div>
+                            </div>
+                            <div id="e">
+                                <img src="./img/hero-select-portrait (20).png">
+                                <div class="name">Wrecking Ball</div>
+                            </div>
+                            <div id="f">
+                                <img src="./img/hero-select-portrait (18).png">
+                                <div class="name">Brigitte</div>
+                            </div>
+                            <div id="g">
+                                <img src="./img/hero-select-portrait (22).png">
+                                <div class="name">Moira</div>
+                            </div>
+                            <div id="h">
+                                <img src="./img/hero-select-portrait (26).png">
+                                <div class="name">Doomfist</div>
+                            </div>
+                            <div id="i">
+                                <img src="./img/hero-select-portrait (12).png">
+                                <div class="name">Orisa</div>
+                            </div>
+                            <div id="j">
+                                <img src="./img/hero-select-portrait (31).png">
+                                <div class="name">Sombra</div>
+                            </div>
+                            <div id="k">
+                                <img src="./img/hero-select-portrait.png">
+                                <div class="name">Ana</div>
+                            </div>
+                            <div id="l">
+                                <img src="./img/hero-select-portrait (21).png">
+                                <div class="name">Bastion</div>
+                            </div>
+                            <div id="m">
+                                <img src="./img/hero-select-portrait (15).png">
+                                <div class="name">D.Va</div>
+                            </div>
+                            <div id="n">
+                                <img src="./img/hero-select-portrait (29).png">
+                                <div class="name">Genji</div>
+                            </div>
+                            <div id="o">
+                                <img src="./img/hero-select-portrait (30).png">
+                                <div class="name">Hanzo</div>
+                            </div>
+                            <div id="p">
+                                <img src="./img/hero-select-portrait (17).png">
+                                <div class="name">Junkrat</div>
+                            </div>
+                            <div id="q">
+                                <img src="./img/hero-select-portrait (2).png">
+                                <div class="name">Lúcio</div>
+                            </div>
+                            <div id="r">
+                                <img src="./img/hero-select-portrait (8).png">
+                                <div class="name">McCree</div>
+                            </div>
+                            <div id="s">
+                                <img src="./img/hero-select-portrait (27).png">
+                                <div class="name">Mei</div>
+                            </div>
+                            <div id="t">
+                                <img src="./img/hero-select-portrait (23).png">
+                                <div class="name">Mercy</div>
+                            </div>
+                            <div id="u">
+                                <img src="./img/hero-select-portrait (6).png">
+                                <div class="name">Pharah</div>
+                            </div>
+                            <div id="v">
+                                <img src="./img/hero-select-portrait (11).png">
+                                <div class="name">Reaper</div>
+                            </div>
+                            <div id="w">
+                                <img src="./img/hero-select-portrait (19).png">
+                                <div class="name">Reinhardt</div>
+                            </div>
+                            <div id="x">
+                                <img src="./img/hero-select-portrait (25).png">
+                                <div class="name">Roadhog</div>
+                            </div>
+                            <div id="y">
+                                <img src="./img/hero-select-portrait (4).png">
+                                <div class="name">Soldier: 76</div>
+                            </div>
+                            <div id="z">
+                                <img src="./img/hero-select-portrait (9).png">
+                                <div class="name">Symmetra</div>
+                            </div>
+                            <div id="z2">
+                                <img src="./img/hero-select-portrait (7).png">
+                                <div class="name">Torbjörn</div>
+                            </div>
+                            <div id="z3">
+                                <img src="./img/hero-select-portrait (5).png">
+                                <div class="name">Tracer</div>
+                            </div>
+                            <div id="z4">
+                                <img src="./img/hero-select-portrait (21).png">
+                                <div class="name">Widowmaker</div>
+                            </div>
+                            <div id="z5">
+                                <img src="./img/hero-select-portrait (1).png">
+                                <div class="name">Winston</div>
+                            </div>
+                            <div id="z6">
+                                <img src="./img/hero-select-portrait (24).png">
+                                <div class="name">Zarya</div>
+                            </div>
+                            <div id="z7">
+                                <img src="./img/hero-select-portrait (30).png">
+                                <div class="name">Zenyatta</div>
+                            </div>
+                            
+                        </div>
+                        <img src="./img/33.png" style="position: relative;top: 160px;margin-left: 20px;cursor: pointer;"onclick="turn_right()">
                     </div>
                 </div>
             </div>
@@ -399,7 +563,27 @@
             </svg>
             <span style="color: #0074e0;">Battle.net Desktop App</span>
         </div>
-        <div class="1">©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.</div>
+        <div class="inc">©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.</div>
+        <div class="trademarks">All trademarks referenced herein are the properties of their respective owners.</div>
+        <nav class="main_links" style="font-size: 13px; margin-top: 10px;">
+            <label class="link1">PRIVACY</label>
+            <label class="link">LEGAL</label>
+            <label class="link">TERMS</label>
+            <label class="link">COOKIE POLICY</label>
+            <label class="link">COOKIE SETTINGS</label>
+        </nav>
+        <div class="legal">
+            <img src="./img/31.jpg">
+            <img src="./img/32.png"style="margin-left:10px">
+            <div class="word">
+                Blood<br>
+                Use of Tobacco<br>
+                Violence<hr>
+                Users Interact<br>
+                In-Game Purchases<br>
+
+            </div>
+        </div>
     </section>
 </body>
 <script src="main.js"></script>

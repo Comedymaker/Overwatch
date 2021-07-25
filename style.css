@@ -106,12 +106,11 @@ header .logo1{
     height: 50px;
     width: 90px;
 }
-#site .items li ::before{
+/* #site .items li ::before{
     content: "";
-    left: 0;
     width: 1px;
     background-color: #e5e3dc;
-}
+} */
 #site .items svg{
     height: 20px;
     width: 20px;
@@ -122,6 +121,12 @@ header .logo1{
     border-bottom: 3px #f06414 solid;
     color: #f06414;
     fill: #f06414;
+    background-color: #353c42;
+    height: 47px;
+}
+#site .items li:hover ul li{
+    border-bottom: none;
+    visibility: visible;
 }
 /* #site .items li:checked + li{
     background-color: #353c42;
@@ -164,7 +169,22 @@ header .logo1{
     width: 89px;
     position: relative;
     left: -22%;
-    display: inline;
+    z-index: 999;
+    visibility: hidden;
+    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#site .events ul li{
+    width: 140px;
+}
+#site .news ul li{
+    width: 120px;
+}
+#site .community ul li{
+    left: -15%;
+    width: 150px;
+}
+#site .esports ul li{
+    width: 140px;
 }
 #site .container{
     
@@ -276,6 +296,7 @@ header .logo1{
     background-size: cover;
     /* height: 800px; */
     padding: 50px 10px;
+    height: 800px;
 }
 #choose_hero .container{
     display: flex;
@@ -314,10 +335,8 @@ header .logo1{
     flex-direction: column;
     align-items: flex-start;
     font-family: FuturaNo2D,Century Gothic,AppleGothic,sans-serif;
-    text-transform: uppercase;
     padding: 20px;
-    position: relative;
-    left: -30%;
+
 }
 #choose_hero .container .hero_wrapper .switch span{
     letter-spacing: 1px;
@@ -353,6 +372,43 @@ header .logo1{
     padding: 12px 20px;
     color: white;
     cursor: pointer;
+}
+#choose_hero .select{
+    display: flex;
+    justify-content: center;
+}
+#choose_hero .select img{
+    height: 35px;
+    width: 35px;
+}
+#choose_hero .choose{
+    display: flex;
+    width: 880px;
+    overflow: hidden;
+}
+#choose_hero .choose *{
+    background-image:url(./img/background_hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 0px;
+    transition: left 0.3s ease;
+}
+#choose_hero .choose img{
+    height: 300px;
+    width: 200px;
+    margin: 0;
+}
+#choose_hero .choose .name{
+    font-size: 18px;
+    line-height: 30px;
+    color: #4b535d;
+    background-color: #f6f6f6;
+    text-align: center;
+    margin: 0px;
 }
 #playing_role h2{
     font-family: Big Noodle Too,impact,sans-serif;
@@ -859,6 +915,7 @@ header .logo1{
     align-items: center;
     padding-top: 50px;
     background-color: #F0EDF2;
+    color:rgba(0,0,0,.7);
 }
 #footer_container .lang{
     display: flex;
@@ -897,5 +954,23 @@ header .logo1{
 #footer_container .AD{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin: 30px auto;
+}
+#footer_container .inc{
+    font-size: 13px;
+    font-family: Blizzard,Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+}
+#footer_container .trademarks{
+    font-size: 13px;
+    font-family: Blizzard,Helvetica,Arial,sans-serif;
+}
+#footer_container .legal{
+    display: flex;
+    color: rgba(0,0,0,.8);
+    font-size: 11px;    
+    margin: 30px auto;
+}
+#footer_container .legal .word{
+    margin: 10px 20px;
 }
